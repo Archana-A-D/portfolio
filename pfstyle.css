@@ -1,109 +1,63 @@
-@media (max-width: 768px) {body {
-    margin: 0;
-    overflow-x: hidden;
+@media (max-width: 768px) {
+
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    /* Background */
+    .bg {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Intro section */
+    .intro {
+        position: static;
+        text-align: center;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .intro h1 {
+        font-size: 2.2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Profile image */
+    .profile-pic {
+        position: static;
+        display: block;
+        margin: 20px auto;
+        width: 160px;
+        height: 160px;
+    }
+
+    /* Content container */
+    #container {
+        margin-top: 30px;
+        padding: 15px;
+        display: block;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .information {
+        padding: 20px;
+    }
+
+    .detail {
+        font-size: 0.95rem;
+        word-break: break-word;
+    }
 }
-
-/* Background */
-.bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-max-width: 100%;
-    background-image: url("bg.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    filter: blur(1px);
-    transform: scale(1.05);
-    z-index: -1;
-}
-
-/* Profile Image */
-.profile-pic {
-    width: 290px;
-    height: 290px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid rgb(0, 0, 0);
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-    top: 250px;
-    left: 300px;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    position: absolute;
-}
-
-/* Intro text */
-.intro {
-    position: absolute;
-    top: 100px;
-    left: 600px;
-    color: white;
-    z-index: 2;
-    max-width: 500px;
-}
-
-.intro h1 {
-    font-size: 5rem;
-    margin: 0;
-    font-weight: bold;
-    color: rgb(255, 0, 174);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
-
-.intro p {
-    font-size: 1.4rem;
-    line-height: 1.7;
-    max-width: 500px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    opacity: 0.95;
-    text-align: left;
-}
-
-
-
-/* Container section */
-#container {
-   margin-top: 100vh; /* starts after full screen hero */
-    padding: 40px;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    color: white;
-    flex-wrap: wrap;
-    justify-content: center;
-   cursor: pointer;
-   
-}
-
-/* Section titles */
-.items {
-    cursor: pointer;
-      display: block;
-    width: auto;
-    height: auto;
-    color: rgb(0, 156, 253);
-   
-}
-
-#container li {
-    margin-bottom: 10px;
-    
-}
-
-.information{
-    text-align: center;
-}
-h3{
-    color:red;
-}
-.detail{
-
-    font-style: italic;
-    
-
-}}
