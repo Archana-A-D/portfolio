@@ -1,25 +1,110 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background */
+.bg {
+    position: fixed;
+    inset: 0;
+    background: url("bg.jpeg") center/cover no-repeat;
+    filter: blur(1px);
+    transform: scale(1.05);
+    z-index: -1;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    color: white;
+}
+
+.profile-pic {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid black;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.intro {
+    max-width: 600px;
+}
+
+.intro h1 {
+    font-size: 3.5rem;
+    color: rgb(255, 0, 174);
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+/* Sections */
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 60px;
+    color: white;
+}
+
+.box {
+    background: rgba(0,0,0,0.55);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.items {
+    color: rgb(0, 156, 253);
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.box ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Contact */
+.information {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0,0,0,0.7);
+}
+
+.information h3 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.information a {
+    color: white;
+    text-decoration: none;
+}
+
+.information a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
-    body {
-        margin: 0;
-        overflow-x: hidden;
-    }
-
-    /* Background */
-    .bg {
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-    }
-
-    /* Intro section */
-    .intro {
-        position: static;
+    .hero {
+        flex-direction: column;
         text-align: center;
-        padding: 20px;
-        max-width: 100%;
     }
 
     .intro h1 {
@@ -28,36 +113,14 @@
 
     .intro p {
         font-size: 1rem;
-        text-align: center;
     }
 
-    /* Profile image */
     .profile-pic {
-        position: static;
-        display: block;
-        margin: 20px auto;
         width: 160px;
         height: 160px;
     }
 
-    /* Content container */
     #container {
-        margin-top: 30px;
-        padding: 15px;
-        display: block;
-    }
-
-    .box1, .box2, .box3, .box4 {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .information {
         padding: 20px;
-    }
-
-    .detail {
-        font-size: 0.95rem;
-        word-break: break-word;
     }
 }
