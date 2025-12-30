@@ -1,10 +1,14 @@
-body {
-   
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    padding-top: 70px;
+}
 
+/* Background */
 .bg {
     background-image: url("bg.jpeg");
     position: fixed;
@@ -15,10 +19,40 @@ body {
     filter: blur(1px);
     transform: scale(1.05);
     z-index: -1;
-
 }
 
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+}
 
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.navbar a {
+    color: rgb(11, 209, 244);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: rgb(255, 0, 174);
+}
+
+/* Home Section */
 #sec1 {
     min-height: 100vh;
     display: flex;
@@ -28,16 +62,14 @@ body {
     flex-wrap: wrap;
 }
 
-
 .profile-pic {
     width: 290px;
     height: 290px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid white;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
-
 
 .intro {
     max-width: 500px;
@@ -46,11 +78,11 @@ body {
 
 .intro h1 {
     font-size: 4rem;
-
     font-weight: bold;
     color: rgb(255, 0, 174);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
+
 
 .intro p {
     font-size: 1.3rem;
@@ -58,7 +90,7 @@ body {
     margin-top: 15px;
 }
 
-
+/* About Section */
 #sec2 {
     padding: 60px 0;
 }
@@ -85,7 +117,7 @@ body {
     margin-bottom: 10px;
 }
 
-
+/* Contact */
 .information {
     text-align: center;
     padding: 40px 20px;
@@ -98,11 +130,29 @@ h3 {
 .detail a {
     color: rgb(5, 190, 241);
     font-style: italic;
-    
+    text-decoration: none;
 }
 
+/* Resume Button */
+.resume-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: rgb(255, 0, 174);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+}
 
- @media (max-width: 768px) {
+.resume-btn:hover {
+    background: rgb(200, 0, 140);
+    transform: scale(1.05);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
     #sec1 {
         flex-direction: column;
         text-align: center;
@@ -117,4 +167,4 @@ h3 {
         width: 100%;
         max-width: 350px;
     }
-} 
+}
