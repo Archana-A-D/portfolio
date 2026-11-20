@@ -1,89 +1,458 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archana A D | Portfolio</title>
+    <meta name="description" content="Archana A D - Computer Science student, Full-Stack Developer and AI enthusiast. Explore my projects, skills and experience.">
+    <title>Archana A D | Developer Portfolio</title>
     <link rel="stylesheet" href="pfstyle.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#sec1">Home</a></li>
-            <li><a href="#sec2">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+<header class="header">
+    <nav class="navbar container">
+        <a href="#home" class="logo">Archana<span>.</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact" class="nav-contact">Contact Me</a></li>
         </ul>
     </nav>
-    <div class="bg"></div>
-    <section id="sec1">
-        <img src="archana.jpeg" class="profile-pic">
-        <div class="intro">
-            <h1><i>Hello,<br> I'm Archana A D</i></h1>
-            <p>
-                I’m a B.Tech Computer Science and Engineering student at Vidya Academy of Science and Technology,
-                Thrissur, Kerala. I have a strong interest in web development, problem-solving, and emerging technologies,
-                and I enjoy building practical, user-friendly projects while continuously learning and improving my skills.
-            </p>
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+
+            <div class="hero-text">
+                <span class="eyebrow">WELCOME TO MY PORTFOLIO</span>
+
+                <h1>Hello, I'm<br>
+                    <span>Archana A D</span>
+                </h1>
+
+                <h2>Computer Science Student |
+                    <span class="accent">Full-Stack Developer</span>
+                </h2>
+
+                <p>
+                    I build practical web applications and explore AI-powered
+                    solutions. Passionate about technology, problem-solving
+                    and continuously learning new skills.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work ↗
+                    </a>
+
+                    <a href="RESUME-ARCHANA A D.pdf"
+                       class="btn btn-outline" download>
+                        Download Resume ↓
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/Archana-A-D"
+                       target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+
+                    <a href="https://www.linkedin.com/in/archana-a-d/"
+                       target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+
+                    <a href="mailto:adarchana72@gmail.com">Email ↗</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="archana.jpeg"
+                         alt="Archana A D - Profile photo">
+                </div>
+                <div class="floating-card">
+                    <span>🎓</span>
+                    <div>
+                        <strong>B.Tech CSE</strong>
+                        <small>Final Year · 2027</small>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
-    <section id="sec2">
-        <div id="container">
-            <div class="box">
-                <div class="items">EDUCATION</div>
-                <ul>
-                    <li>B.Tech in Computer Science and Engineering <br>– Vidya Academy of Science & Technology</li>
-                    <li>Class XI <br>– Government Higher Secondary School Mupliyam</li>
-                    <li>Class X <br>– Government Higher Secondary School Mupliyam</li>
-                </ul>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">GET TO KNOW ME</span>
+                <h2>About <span>Me</span></h2>
+                <p>A little introduction about my journey and interests.</p>
             </div>
-            <div class="box">
-                <div class="items">PROJECTS</div>
-                <ul>
-                    <li>
-                        <strong>BMI Calculator Website</strong><br>
-                        Developed a responsive web-based BMI calculator with categorized results and health tips.
-                    </li>
-                    <li>
-                        <strong>Smart Period Panty – STRIDE Makethon 2025 (Finalist)</strong><br>
-                        Assistive innovation designed to improve menstrual health and hygiene.
-                    </li>
-                </ul>
+
+            <div class="about-content">
+                <div class="about-card">
+                    <span class="about-icon">👩‍💻</span>
+                    <h3>Who I Am</h3>
+                    <p>
+                        I am a final-year B.Tech Computer Science and
+                        Engineering student at Vidya Academy of Science
+                        and Technology, Thrissur, Kerala.
+                    </p>
+                    <p>
+                        I enjoy developing web applications, working with
+                        databases and integrating AI APIs to create useful
+                        software solutions.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <span class="about-icon">🚀</span>
+                    <h3>What I Do</h3>
+                    <p>
+                        My interests include full-stack development,
+                        backend programming, API integration and
+                        AI-powered applications.
+                    </p>
+                    <p>
+                        I believe in learning through practical projects
+                        and improving my technical skills with every
+                        new challenge.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <span class="about-icon">🎯</span>
+                    <h3>My Goal</h3>
+                    <p>
+                        To grow as a software engineer, explore emerging
+                        technologies and contribute to meaningful
+                        real-world projects.
+                    </p>
+                    <p>
+                        I am always open to learning opportunities and
+                        new technical challenges.
+                    </p>
+                </div>
             </div>
-            <div class="box">
-                <div class="items">SKILLS</div>
-                <ul>
-                    <li>Programming: C, Java</li>
-                    <li>Web Technologies: HTML, CSS, JavaScript</li>
-                    <li>Database: SQL, PL/SQL</li>
-                    <li>Tools: MS Office</li>
-                </ul>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">WHAT I WORK WITH</span>
+                <h2>Technical <span>Skills</span></h2>
+                <p>Technologies and tools I have worked with.</p>
             </div>
-            <div class="box">
-                <div class="items">ACHIEVEMENTS</div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-icon">⌨️</div>
+                    <h3>Programming</h3>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>C</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Frontend Development</h3>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>React.js</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend & APIs</h3>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>Django REST Framework</span>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Databases</h3>
+                    <div class="tags">
+                        <span>MySQL</span>
+                        <span>SQLite</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI Integration</h3>
+                    <div class="tags">
+                        <span>Google Gemini API</span>
+                        <span>Prompt Engineering</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Tools & Platforms</h3>
+                    <div class="tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Docker</span>
+                        <span>VS Code</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">MY RECENT WORK</span>
+                <h2>Featured <span>Projects</span></h2>
+                <p>Some projects where I applied my technical knowledge.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- PROJECT 1 -->
+                <article class="project-card">
+                    <div class="project-number">01</div>
+                    <div class="project-visual carebridge">
+                        <span>🤖</span>
+                        <h3>CareBridge-AI</h3>
+                    </div>
+
+                    <div class="project-info">
+                        <span class="project-category">AI APPLICATION</span>
+                        <h3>Discharge Summary Assistant</h3>
+
+                        <p>
+                            An AI-powered application that converts
+                            discharge summary PDFs into patient-friendly
+                            medication and follow-up plans in four languages.
+                            Includes AI-powered question answering
+                            with page citations.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Gemini API</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <a href="https://github.com/Archana-A-D/Healthcare_CareBridge-AI"
+                           target="_blank" rel="noopener noreferrer"
+                           class="project-link">
+                            View GitHub Repository ↗
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2 -->
+                <article class="project-card">
+                    <div class="project-number">02</div>
+                    <div class="project-visual smartbin">
+                        <span>♻️</span>
+                        <h3>SmartBin Connect</h3>
+                    </div>
+
+                    <div class="project-info">
+                        <span class="project-category">WEB APPLICATION</span>
+                        <h3>Smart Waste Collection System</h3>
+
+                        <p>
+                            A web-based platform connecting residents,
+                            waste collectors and administrators through
+                            on-demand waste pickup requests, location-based
+                            mapping and management dashboards.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                            <span>Leaflet.js</span>
+                            <span>Chart.js</span>
+                        </div>
+
+                        <a href="https://github.com/SmartBin-Connect/SmartBin-Connect"
+                           target="_blank" rel="noopener noreferrer"
+                           class="project-link">
+                            View GitHub Repository ↗
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">MY ACADEMIC JOURNEY</span>
+                <h2>Education & <span>Achievements</span></h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-card">
+                        <span class="timeline-date">2023 – 2027</span>
+                        <h3>B.Tech – Computer Science and Engineering</h3>
+                        <p>Vidya Academy of Science & Technology, KTU</p>
+                        <span class="highlight">CGPA: 8.6</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-card">
+                        <span class="timeline-date">2023</span>
+                        <h3>Higher Secondary Education</h3>
+                        <p>Government Higher Secondary School, Mupliyam</p>
+                        <span class="highlight">92%</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-card">
+                        <span class="timeline-date">2021</span>
+                        <h3>Secondary Education</h3>
+                        <p>Government Higher Secondary School, Mupliyam</p>
+                        <span class="highlight">99%</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="achievement-card">
+                <span>🏆</span>
+                <div>
+                    <h3>STRIDE Makethon 2025 – Finalist</h3>
+                    <p>
+                        Contributed to the concept development and
+                        presentation of Period Panty, an assistive
+                        innovation for menstrual health.
+                    </p>
+                </div>
+            </div>
+
+            <div class="certifications">
+                <h3>Certifications & Learning</h3>
                 <ul>
-                    <li>Completed 12-week NPTEL course "Introduction to Machine Learning"</li>
-                    <li>Completed Python 3.4.3 training by Spoken Tutorial, IIT Bombay</li>
-                    <li>Completed 3-day workshop on AI frameworks at Christ College of Engineering</li>
+                    <li>Introduction to Machine Learning – NPTEL</li>
+                    <li>Getting Started with Artificial Intelligence – IBM SkillsBuild</li>
+                    <li>Prompt Engineering for AI Systems – One Million Prompters</li>
+                    <li>Evolving Intelligence – Christ College of Engineering</li>
                 </ul>
             </div>
         </div>
     </section>
-    <div class="information" id="contact">
-        <h3>CONTACT INFO</h3>
-        <h4 class="detail">
-            <a href="mailto:adarchana72@gmail.com">📩 Email: adarchana72@gmail.com</a>
-        </h4>
-        <h4 class="detail">
-            <a href="tel:7034072601">📞 Call: 7034072601</a>
-        </h4>
-        <h4 class="detail">
-            <a href="https://github.com/Archana-A-D" target="_blank">💻 GitHub</a>
-        </h4>
-        <h4 class="detail">
-            <a href="https://www.linkedin.com/in/archana-a-d-02504a346/" target="_blank">🔗 LinkedIn</a>
-        </h4>
-        <a class="resume-btn" href="RESUME-ARCHANA A D.pdf" download>⬇ Download Resume</a>
-    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">LET'S CONNECT</span>
+                <h2>Get In <span>Touch</span></h2>
+                <p>Have an opportunity or just want to connect? Feel free to reach out.</p>
+            </div>
+
+            <div class="contact-card">
+                <a href="mailto:adarchana72@gmail.com" class="contact-item">
+                    <span>✉️</span>
+                    <div>
+                        <small>Email</small>
+                        <strong>adarchana72@gmail.com</strong>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/archana-a-d/"
+                   target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <span>💼</span>
+                    <div>
+                        <small>LinkedIn</small>
+                        <strong>Connect with me</strong>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Archana-A-D"
+                   target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <span>💻</span>
+                    <div>
+                        <small>GitHub</small>
+                        <strong>Explore my repositories</strong>
+                    </div>
+                </a>
+            </div>
+
+            <a href="mailto:adarchana72@gmail.com" class="btn btn-primary contact-button">
+                Say Hello ↗
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>Designed & Built by <strong>Archana A D</strong></p>
+    <p>© <span id="year"></span> Archana A D. All rights reserved.</p>
+    <a href="#home">Back to Top ↑</a>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("active");
+        menuToggle.setAttribute("aria-expanded", isOpen);
+        menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.textContent = "☰";
+        });
+    });
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
+
 </body>
 </html>
-
